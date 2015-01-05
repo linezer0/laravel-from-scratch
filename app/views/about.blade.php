@@ -1,7 +1,9 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: thomasparker
- * Date: 05/01/15
- * Time: 13:34
- */
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>About page</h1>
+</body>
+</html>
