@@ -20,8 +20,33 @@ Route::get('/users', function() {
 });
 
 Route::get('/', function() {
-//    return DB::table('users')->get(); // SELECT * FROM users
-    $users = DB::table('users')->where('username', '!=', 'thomas@iaelyon.fr')->get();
-//    dd($users); // die(var_dump($users)
-    return $users;
+    /* First way to add a user
+    !! Remember to add the $timestamps = false line to the User model to indicate we don't want to use timestamps
+    */
+//    $user = new User;
+//    $user->username = 'william@iaelyon.fr';
+//    $user->password = Hash::make('william');
+//    $user->save();
+
+    /* Second way to add a user
+    !! Remember to add the $fillable variable assigned to the User model to indicate the fields we want to mass assign
+    */
+//    User::create( [
+//        'username' => 'sanae@iaelyon.fr',
+//        'password' => Hash::make('sanae')
+//    ]);
+
+    // Way to update a User
+//    $user  = User::find(2);
+//    $user->username = 'salma@iaelyon.fr';
+//    $user->save();
+
+    // Delete a user
+//    $user = User::find(2);
+//    $user->delete();
+
+    // users ordered by username
+//    return User::orderBy('username', 'asc')->get();
+
+    return User::all();
 });
