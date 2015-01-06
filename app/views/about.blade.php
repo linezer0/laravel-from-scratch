@@ -4,6 +4,6 @@
     <meta charset="UTF-8">
 </head>
 <body>
-<h1>About page</h1>
+    <h1>About page</h1>
 </body>
 </html>
